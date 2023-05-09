@@ -12,8 +12,9 @@
   </head>
   <body>
     <h1>LOG-OUT</h1>
-    <button type="button" class="btn btn-primary">Cerrar sesion</button>
-
+    <form action="parametros.php" method="post"></form>
+    <button type="submit" class="btn btn-primary"  name="close">Cerrar sesion</button>
+    </form>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

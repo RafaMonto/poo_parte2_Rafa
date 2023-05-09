@@ -25,7 +25,7 @@ Class DatabasePDO {
         
             }
         }catch(Exception $e){
-            return "Ocurrió algo con la base de datos: " . $e->getMessage();
+            return 'Ocurrió algo con la base de datos: ' . $e->getMessage();
         }
     }
 
