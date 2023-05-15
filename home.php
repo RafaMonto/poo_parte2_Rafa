@@ -12,8 +12,10 @@
   </head>
   <body>
     <h1>LOG-OUT</h1>
-    <form action="parametros.php" method="post"></form>
-    <button type="submit" class="btn btn-primary"  name="close">Cerrar sesion</button>
+    <form action="parametros.php" method="post">
+    <input type="hidden" class="btn btn-primary"  name="user" value="<?php echo $_GET['user']?>"></input>
+    <input type="hidden" class="btn btn-primary"  name="pass" value="<?php echo $_GET['pass']?>"></input>
+    <input type="submit" class="btn btn-primary"  name="close" value="Cerrar Sesion"></input>
     </form>
     <!-- Optional JavaScript; choose one of the two! -->
 

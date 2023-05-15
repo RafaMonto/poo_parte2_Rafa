@@ -52,7 +52,7 @@
                     <label for="password" class="form-label">Contraseña</label>
                     <input type="password" class="form-control" id="password" name="pass">
                 </div>
-                <button type="submit" class="btn" style="background-color: #20c997">Iniciar sesión</button>
+                <button type="submit" class="btn" style="background-color: #20c997" name="btn">Iniciar sesión</button>
             </form>
         </div>
     </div>

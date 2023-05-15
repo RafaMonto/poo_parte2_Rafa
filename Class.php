@@ -27,8 +27,6 @@ class Log extends DatabasePDO{
                     //Ejecutamos la consulta
                     $stmt->execute();
                     $count=$stmt->rowCount();
-                    $data=$stmt->fetch(PDO::FETCH_OBJ);
-                    $db = null;
                     $mesage= "";
                     if($count){
                     
@@ -47,6 +45,8 @@ class Log extends DatabasePDO{
     }
 
     public function __destruct(){
-        echo "Se a borrado correctamente";
+        unset($this->user);
+        unset($this->pass);
+        echo "<script>alert('Se ha borrado la clase');</script>";
     }
 }
