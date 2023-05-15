@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-05-2023 a las 19:33:50
+-- Tiempo de generación: 15-05-2023 a las 21:48:36
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -38,7 +38,8 @@ CREATE TABLE `iniciar` (
 --
 
 INSERT INTO `iniciar` (`Id`, `Usuario`, `Contraseña`) VALUES
-(1, 'administrador', '12345678');
+(1, 'administrador', '12345678'),
+(2, 'armando', 'maradona');
 
 --
 -- Índices para tablas volcadas
@@ -58,7 +59,7 @@ ALTER TABLE `iniciar`
 -- AUTO_INCREMENT de la tabla `iniciar`
 --
 ALTER TABLE `iniciar`
-  MODIFY `Id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `Id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
