@@ -20,7 +20,7 @@ if(isset($_POST['btn'])){
    if ($response=="verdadero") {
       header("Location: ../home.php?user=" . urlencode($user). "&pass=" . urldecode($pass)); 
    }else{
-   echo '<script language="javascript">alert("Error En Datos");window.location.href = "../index.php";2q1</script>';
+   echo '<script language="javascript">alert("Error En Datos");window.location.href = "../index.php";</script>';
    }
 }
 
@@ -56,4 +56,6 @@ if(isset($_POST['regis'])){
    $precio = $_POST['precio'];
 
    $carro = new MotorClass($marca, $modelo, $año, $color, $npuertas, $tcarroceria, $transmi, $combus, $kilo, $cpasa, $carga, $frenos, $segu, $confort, $potencia, $precio);
+
+   $carro->agregar();
 }

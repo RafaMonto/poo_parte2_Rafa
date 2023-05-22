@@ -58,69 +58,69 @@
                   <form action="./config/parametros.php" method="post">
                       <div class="mb-3">
                           <label for="marca" class="form-label">Marca</label>
-                          <input type="text" class="form-control" id="marca">
+                          <input type="text" class="form-control" id="marca" name="marca" required>
                       </div>
                       <div class="mb-3">
                           <label for="modelo" class="form-label">Modelo</label>
-                          <input type="text" class="form-control" id="modelo">
+                          <input type="text" class="form-control" id="modelo" name="modelo" required>
                       </div>
                       <div class="mb-3">
-                          <label for="anio" class="form-label">Año</label>
-                          <input type="text" class="form-control" id="anio">
+                          <label for="año" class="form-label">Año</label>
+                          <input type="number" class="form-control" id="año"name="año" required>
                       </div>
                       <div class="mb-3">
                           <label for="color" class="form-label">Color</label>
-                          <input type="text" class="form-control" id="color">
+                          <input type="text" class="form-control" id="color" name="color" requierd>
                       </div>
                       <div class="mb-3">
                           <label for="npuertas" class="form-label">Número de puertas</label>
-                          <input type="number" class="form-control" id="npuertas" name="npuertas">
+                          <input type="number" class="form-control" id="npuertas" name="npuertas" required>
                       </div>
                       <div class="mb-3">
                           <label for="carroceria" class="form-label">Tipo de carrocería</label>
-                          <input type="text" class="form-control" id="carroceria" name="carroceria">
+                          <input type="text" class="form-control" id="carroceria" name="carroceria" required>
                       </div>
                       <div class="mb-3">
                           <label for="transmi" class="form-label">Transmisión</label>
-                          <input type="text" class="form-control" id="transmi" name="transmi">
+                          <input type="text" class="form-control" id="transmi" name="transmi" required>
                       </div>
                       <div class="mb-3">
                           <label for="combus" class="form-label">Combustible</label>
-                          <input type="text" class="form-control" id="combus" name="combus">
+                          <input type="text" class="form-control" id="combus" name="combus" required>
                       </div>
                       <div class="mb-3">
                           <label for="kilo" class="form-label">Kilometraje</label>
-                          <input type="text" class="form-control" id="kilo" name="kilo">
+                          <input type="text" class="form-control" id="kilo" name="kilo" required>
                       </div>
                       <div class="mb-3">
                           <label for="cpasa" class="form-label">Capacidad pasajeros</label>
-                          <input type="number" class="form-control" id="cpasa" name="cpasa">
+                          <input type="number" class="form-control" id="cpasa" name="cpasa" required>
                       </div>
                       <div class="mb-3">
                           <label for="carga" class="form-label">Capacidad de carga</label>
-                          <input type="text" class="form-control" id="carga" name="carga">
+                          <input type="text" class="form-control" id="carga" name="carga" required>
                       </div>
                       <div class="mb-3">
                           <label for="frenos" class="form-label">Sistema de frenos</label>
-                          <input type="text" class="form-control" id="frenos" name="frenos">
+                          <input type="text" class="form-control" id="frenos" name="frenos" required>
                       </div>
                       <div class="mb-3">
                           <label for="segu" class="form-label">Equipamento de seguridad</label>
-                          <input type="text" class="form-control" id="segu" name="segu">
+                          <input type="text" class="form-control" id="segu" name="segu" required>
                       </div>
                       <div class="mb-3">
                           <label for="confort" class="form-label">Equipamento de confort</label>
-                          <input type="text" class="form-control" id="confort" name="confort">
+                          <input type="text" class="form-control" id="confort" name="confort" required>
                       </div>
                       <div class="mb-3">
                           <label for="potencia" class="form-label">Potencia</label>
-                          <input type="text" class="form-control" id="potencia" name="potencia">
+                          <input type="text" class="form-control" id="potencia" name="potencia" required>
                       </div>
                       <div class="mb-3">
                           <label for="precio" class="form-label">Precio</label>
-                          <input type="text" class="form-control" id="precio" name="precio">
+                          <input type="text" class="form-control" id="precio" name="precio" required>
                       </div>
-                      <button type="submit" class="btn btn-red" name="regis">Enviar</button>
+                      <button type="submit" class="btn btn-red" name="regis">Agregar</button>
                   </form>
               </div>
           </div>
