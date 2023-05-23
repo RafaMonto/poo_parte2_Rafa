@@ -109,8 +109,8 @@
                           <input type="text" class="form-control" id="segu" name="segu" required>
                       </div>
                       <div class="mb-3">
-                          <label for="confort" class="form-label">Equipamento de confort</label>
-                          <input type="text" class="form-control" id="confort" name="confort" required>
+                          <label for="placa" class="form-label">Placa</label>
+                          <input type="text" class="form-control" id="placa" name="placa" required>
                       </div>
                       <div class="mb-3">
                           <label for="potencia" class="form-label">Potencia</label>
@@ -120,10 +120,13 @@
                           <label for="precio" class="form-label">Precio</label>
                           <input type="text" class="form-control" id="precio" name="precio" required>
                       </div>
-                      <button type="submit" class="btn btn-red" name="regis">Agregar</button>
+                      <button type="submit" class="btn btn-red" name="regis"><a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#nuevoModal">Agregar</a></button>
                   </form>
               </div>
           </div>
+          <?php
+          require 'modal.php'; 
+          ?>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

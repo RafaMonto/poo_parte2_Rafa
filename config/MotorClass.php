@@ -13,11 +13,11 @@ class MotorClass extends DatabasePDO{
     public $carga;
     public $frenos;
     public $segu;
-    public $confort;
+    public $placa;
     public $potencia;
     public $precio;
     
-    public function __construct($mar, $mod, $año, $col, $npu, $tca, $tra, $com, $kil, $cpa, $car, $fre, $seg, $con, $pot, $pre){
+    public function __construct($mar, $mod, $año, $col, $npu, $tca, $tra, $com, $kil, $cpa, $car, $fre, $seg, $pla, $pot, $pre){
         $this->marca = $mar;
         $this->modelo = $mod;
         $this->año = $año;
@@ -31,7 +31,7 @@ class MotorClass extends DatabasePDO{
         $this->carga = $car;
         $this->frenos = $fre;
         $this->segu = $seg;
-        $this->confort = $con;
+        $this->placa = $pla;
         $this->potencia = $pot;
         $this->precio = $pre;
     }
@@ -41,7 +41,7 @@ class MotorClass extends DatabasePDO{
 
             $cnn = $this->conn();
             // set the PDO error mode to exception
-            $stmt = $cnn->prepare("INSERT INTO `carros`(`Marca`, `Modelo`, `Año`, `Color`, `Numero_Puertas`, `Tipo_Carroceria`, `Transmision`, `Combustible`, `Kilometraje`, `Capacidad_Pasajeros`, `Capacidad_Carga`, `Sistema_Frenos`, `Equipamento_Seguridad`, `Equipamento_Confort`, `Potencia`, `Precio`) VALUES (':marca',':modelo',':año',':color',':npuertas',':tcarroceria',':transmi',':combus',':kilo',':cpasa',':carga',':frenos',':segu',':confort',':potencia',':precio'");
+            $stmt = $cnn->prepare("INSERT INTO `carros`(`Marca`, `Modelo`, `Año`, `Color`, `Numero_Puertas`, `Tipo_Carroceria`, `Transmision`, `Combustible`, `Kilometraje`, `Capacidad_Pasajeros`, `Capacidad_Carga`, `Sistema_Frenos`, `Equipamento_Seguridad`, `Placa`, `Potencia`, `Precio`) VALUES (':marca',':modelo',':año',':color',':npuertas',':tcarroceria',':transmi',':combus',':kilo',':cpasa',':carga',':frenos',':segu',':placa',':potencia',':precio'");
             $stmt->bindParam("marca", $this->marca,PDO::PARAM_STR) ;
             $stmt->bindParam("modelo", $this->modelo,PDO::PARAM_STR) ;
             $stmt->bindParam("año", $this->año,PDO::PARAM_STR) ;
@@ -55,7 +55,7 @@ class MotorClass extends DatabasePDO{
             $stmt->bindParam("carga", $this->carga,PDO::PARAM_STR) ;
             $stmt->bindParam("frenos", $this->frenos,PDO::PARAM_STR) ;
             $stmt->bindParam("segu", $this->segu,PDO::PARAM_STR) ;
-            $stmt->bindParam("confort", $this->confort,PDO::PARAM_STR) ;
+            $stmt->bindParam("placa", $this->placa,PDO::PARAM_STR) ;
             $stmt->bindParam("potencia", $this->potencia,PDO::PARAM_STR) ;
             $stmt->bindParam("precio", $this->precio,PDO::PARAM_STR) ;
             $stmt->execute();

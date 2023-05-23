@@ -1,6 +1,7 @@
 <?php
 include_once('Class.php');
 include_once('MotorClass.php');
+require '../modal.php';
 
 
 if(isset($_POST['btn'])){
@@ -51,11 +52,11 @@ if(isset($_POST['regis'])){
    $carga = $_POST['carga'];
    $frenos = $_POST['frenos'];
    $segu = $_POST['segu'];
-   $confort = $_POST['confort'];
+   $placa = $_POST['placa'];
    $potencia = $_POST['potencia'];
    $precio = $_POST['precio'];
 
-   $carro = new MotorClass($marca, $modelo, $año, $color, $npuertas, $tcarroceria, $transmi, $combus, $kilo, $cpasa, $carga, $frenos, $segu, $confort, $potencia, $precio);
+   $carro = new MotorClass($marca, $modelo, $año, $color, $npuertas, $tcarroceria, $transmi, $combus, $kilo, $cpasa, $carga, $frenos, $segu, $placa, $potencia, $precio);
 
    $carro->agregar();
 }
